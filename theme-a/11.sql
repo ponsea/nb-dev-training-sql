@@ -1,1 +1,2 @@
-SELECT * FROM 口座 WHERE 口座番号 < 1000000;
+# 誤り: SELECT * FROM 口座 WHERE 口座番号 < 1000000;
+SELECT * FROM 口座 WHERE 口座番号 < '1000000';
