@@ -1,0 +1,3 @@
+SELECT *
+FROM 口座
+WHERE 残高 < 10000 AND 更新日 IS NOT NULL
