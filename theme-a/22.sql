@@ -1,0 +1,4 @@
+SELECT *
+FROM 口座
+WHERE 口座番号 BETWEEN 2000000 AND 2999999 OR
+      名義 LIKE 'エ__　%コ';
