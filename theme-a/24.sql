@@ -1,0 +1,1 @@
+SELECT * FROM 口座 ORDER BY 口座番号;
