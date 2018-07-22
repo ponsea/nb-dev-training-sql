@@ -1,0 +1,6 @@
+SELECT DISTINCT 名義
+FROM 口座
+WHERE 名義 NOT IN (SELECT DISTINCT 名義 FROM 廃止口座)
+ORDER BY 名義 DESC;
+
+# EXCEPTはMySQLには無いらしい。（驚愕）
