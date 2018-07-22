@@ -1,0 +1,5 @@
+SELECT DISTINCT K.名義
+FROM 口座 K INNER JOIN 廃止口座 HK ON K.名義 = HK.名義
+ORDER BY K.名義;
+
+# INTERSECTもMySQLにはないらしい。（驚愕）
