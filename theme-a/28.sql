@@ -1,0 +1,5 @@
+SELECT 更新日, 残高
+FROM 口座
+WHERE 残高 <> 0 AND 更新日 IS NOT NULL
+ORDER BY 残高, 更新日 DESC
+LIMIT 10, 10;
