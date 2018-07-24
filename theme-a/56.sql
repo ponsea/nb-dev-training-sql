@@ -1,0 +1,9 @@
+SELECT
+  SUBSTRING(COALESCE(CAST(更新日 AS CHAR), 'XXXX'), 1, 4) AS 更新日の年,
+  SUM(残高),
+  MAX(残高),
+  MIN(残高),
+  AVG(残高),
+  COUNT(*)
+FROM 口座
+GROUP BY SUBSTRING(COALESCE(CAST(更新日 AS CHAR), 'XXXX'), 1, 4);
