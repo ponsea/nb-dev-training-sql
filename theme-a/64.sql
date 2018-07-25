@@ -1,0 +1,4 @@
+INSERT INTO 廃止口座
+SELECT * FROM 口座 WHERE 口座番号 = '2761055';
+
+DELETE FROM 口座 WHERE 口座番号 = '2761055';
