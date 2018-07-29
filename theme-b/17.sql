@@ -1,0 +1,7 @@
+SELECT
+  *
+FROM
+  商品
+WHERE
+  商品コード BETWEEN 'A0100' AND 'A0500'
+;
