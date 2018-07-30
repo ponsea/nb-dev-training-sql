@@ -1,0 +1,10 @@
+SELECT
+  *
+FROM
+  廃番商品
+WHERE
+  廃番日 BETWEEN '2011-12-01' AND '2011-12-31'
+  OR 売上個数 > 100
+ORDER BY
+  売上個数 DESC
+;
