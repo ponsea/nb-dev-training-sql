@@ -1,0 +1,9 @@
+SELECT
+  SUBSTRING(注文番号, 9) AS 連番部分
+FROM
+  注文
+WHERE
+  SUBSTRING(注文番号, 9) BETWEEN '1000' AND '2000'
+ORDER BY
+  連番部分
+;
