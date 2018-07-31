@@ -7,7 +7,8 @@ SELECT
     WHEN 単価 BETWEEN 3000 AND 9999 THEN 'M'
     WHEN 単価 > 10000 THEN 'L'
     ELSE NULL
-  END AS 商品価格ランク,
+  # 誤り: END AS 商品価格ランク,
+  END AS 販売価格ランク,
   CONCAT(
     商品区分,
     ':',

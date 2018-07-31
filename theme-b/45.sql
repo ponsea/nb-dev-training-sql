@@ -5,4 +5,6 @@ SELECT
   TRUNCATE(単価 * 0.7, 0) AS 値下げした単価
 FROM
   商品
+WHERE
+  単価 >= 10000
 ;
