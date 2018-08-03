@@ -14,3 +14,11 @@ WHERE
 ORDER BY
   イベント番号
 ;
+
+# 回答例はEXCEPTを使っている
+# SELECT イベント番号
+#   FROM イベント
+# EXCEPT
+# SELECT イベント番号
+#   FROM 経験イベント
+#  ORDER BY 1
