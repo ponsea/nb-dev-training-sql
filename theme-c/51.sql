@@ -6,4 +6,6 @@ FROM
   パーティー
 GROUP BY
   SUBSTRING(ID, 1, 1)
+HAVING
+  AVG(HP) > 100 # 見落としてた。
 ;
